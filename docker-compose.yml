@@ -7,9 +7,10 @@ services:
       MYSQL_ROOT_PASSWORD: root
     ports: 
       - 3306:3306
+    network_mode: bridge
   redis:
     image: redis:latest
     restart: always
     ports: 
       - 6397:6397
-
+    network_mode: bridge
